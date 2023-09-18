@@ -3,6 +3,8 @@ const {
   getBooks,
   getBook,
   createBook,
+  deleteBook,
+  updateBook,
 } = require("../controllers/bookController");
 
 const router = express.Router();
@@ -17,13 +19,9 @@ router.get("/:id", getBook);
 router.post("/", createBook);
 
 // DELETE a book
-router.delete("/:id", (req, res) => {
-  res.json({ message: "DELETE a book" });
-});
+router.delete("/:id", deleteBook);
 
 // UPDATE a book
-router.patch("/:id", (req, res) => {
-  res.json({ message: "UPDATE a book" });
-});
+router.patch("/:id", updateBook);
 
 module.exports = router;
