@@ -1,5 +1,8 @@
 import { useBooksContext } from "../hooks/useBooksContext";
 
+// date fns
+import formatDistanceToNow from "date-fns/formatDistanceToNow";
+
 const BookDetails = ({ book }) => {
   const { dispatch } = useBooksContext();
 
@@ -29,7 +32,9 @@ const BookDetails = ({ book }) => {
         <strong>Rating: </strong>
         {book.rating}/5
       </p>
-      <p>{book.createdAt}</p>
+      <p>
+        {formatDistanceToNow(new Date(book.createdAt), { addSuffix: true })}
+      </p>
       <span className="delete-button" onClick={handleDelete}>
         Delete
       </span>
