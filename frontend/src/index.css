@@ -64,6 +64,15 @@ header .a {
   color: #333;
 }
 
+.book-details .delete-button {
+  cursor: pointer;
+  background: #f1f1f1;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10%;
+  color: #333;
+}
+
 /* new book form */
 label,
 input {

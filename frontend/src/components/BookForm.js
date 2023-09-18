@@ -39,8 +39,8 @@ const BookForm = () => {
 
   return (
     <form className="create" onSubmit={handleSubmit}>
-      <h3>Add a Book to Your Bookshelf</h3>
-      <label>Book Title:</label>
+      <h3>Add to Bookshelf</h3>
+      <label>Title:</label>
       <input
         type="text"
         onChange={(e) => setTitle(e.target.value)}
