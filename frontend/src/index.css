@@ -32,6 +32,22 @@ header .a {
   margin: 0 auto;
 }
 
+/* dropdown style */
+
+.order-select {
+  margin-left: 10px;
+  width: 120px;
+  font-size: 15px;
+  position: relative;
+  font-family: "Poppins";
+  appearance: none;
+  text-align: center;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* book details style */
+
 .book-details {
   background: #fff;
   border-radius: 4px;
