@@ -35,9 +35,14 @@ const BookDetails = ({ book }) => {
       <p>
         {formatDistanceToNow(new Date(book.createdAt), { addSuffix: true })}
       </p>
-      <span className="delete-button" onClick={handleDelete}>
-        Delete
-      </span>
+      <div className="book-details-buttons">
+        <span className="loan-button" onClick={() => {}}>
+          Loan
+        </span>
+        <span className="delete-button" onClick={handleDelete}>
+          Delete
+        </span>
+      </div>
     </div>
   );
 };
