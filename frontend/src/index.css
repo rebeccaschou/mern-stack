@@ -36,7 +36,9 @@ header .a {
 
 .order-select {
   margin-left: 10px;
-  width: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* width: 2000px; */
   font-size: 15px;
   position: relative;
   font-family: "Poppins";
