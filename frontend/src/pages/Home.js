@@ -42,7 +42,7 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <div>
+      <div className="home-upper">
         <label>
           Sort Bookshelf by:
           <select className="order-select" onChange={changeOrder}>
@@ -51,11 +51,13 @@ const Home = () => {
           </select>
         </label>
       </div>
-      <div className="books">
-        {books &&
-          books.map((book) => <BookDetails key={book._id} book={book} />)}
+      <div className="home-lower">
+        <div className="books">
+          {books &&
+            books.map((book) => <BookDetails key={book._id} book={book} />)}
+        </div>
+        <BookForm />
       </div>
-      <BookForm />
     </div>
   );
 };
