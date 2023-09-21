@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useBooksContext } from "../hooks/useBooksContext";
 
 // components
-import BookDetails from "../components/BookDetails";
+import LoanDetails from "../components/LoanDetails";
 
 const Loans = () => {
   const { books, dispatch } = useBooksContext();
@@ -28,7 +28,7 @@ const Loans = () => {
         {books &&
           books
             .filter((book) => book.loaned)
-            .map((book) => <BookDetails key={book._id} book={book} />)}
+            .map((book) => <LoanDetails key={book._id} book={book} />)}
       </div>
     </div>
   );

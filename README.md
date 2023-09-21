@@ -6,7 +6,12 @@ Simple bookshelf and loaned books tracker implemented using MongoDB, Express.js,
 
 - Add and delete books from your bookshelf (store title, author, description, and rating)
 - Sort bookshelf by date added, rating, or alphabetically by title/author
-- (In Progress) Track loaned books to friends on "Manage Loans" page
+- (Buggy) Track loaned books to friends on "Manage Loans" page
+
+## Bugs
+
+- Using "loan" button changes display order
+- Using "mark as returned" button changes display order and needs reload to update
 
 ## How to Run
 
