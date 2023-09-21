@@ -72,6 +72,12 @@ header .navbar-logo:hover {
   margin-left: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  background-color: var(--primary);
+  color: #fff;
+
   /* width: 2000px; */
   font-size: 15px;
   position: relative;
@@ -79,7 +85,7 @@ header .navbar-logo:hover {
   appearance: none;
   text-align: center;
   border-radius: 5px;
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
 }
 
 /* book details style */
