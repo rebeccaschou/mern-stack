@@ -19,6 +19,11 @@ const bookSchema = new Schema(
       type: Number,
       required: true,
     },
+    loaned: {
+      type: Boolean,
+      default: false,
+      // required: false,
+    },
   },
   { timestamps: true }
 );

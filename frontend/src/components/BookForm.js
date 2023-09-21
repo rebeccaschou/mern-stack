@@ -11,8 +11,9 @@ const BookForm = () => {
   const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
+    const loaned = false;
     e.preventDefault();
-    const book = { title, author, description, rating };
+    const book = { title, author, description, rating, loaned };
     const response = await fetch("/api/books", {
       method: "POST",
       body: JSON.stringify(book),
